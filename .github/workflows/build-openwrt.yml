@@ -21,6 +21,9 @@ on:
 #  schedule:
 #    - cron: 0 8 * * 5
 
+#点☆Star触发开始编译
+  watch:
+    types: started
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
@@ -32,7 +35,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: true
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
 jobs:
