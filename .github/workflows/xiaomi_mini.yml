@@ -11,6 +11,8 @@
 name: Build XiaoMi mini
 
 on:
+  label:
+    type: created
   repository_dispatch:
   workflow_dispatch:
     inputs:
@@ -22,8 +24,8 @@ on:
 #    - cron: 0 8 * * 5
 
 #点☆Star触发开始编译
-  watch:
-    types: started
+  # watch:
+  #   types: started
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
