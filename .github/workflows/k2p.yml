@@ -12,7 +12,7 @@ name: Build K2P
 
 on:
   label:
-    types: created
+    types: [created]
   repository_dispatch:
   workflow_dispatch:
     inputs:
