@@ -12,7 +12,7 @@ name: Build XiaoMi mini
 
 on:
   label:
-    type: created
+    type: [created]
   repository_dispatch:
   workflow_dispatch:
     inputs:
