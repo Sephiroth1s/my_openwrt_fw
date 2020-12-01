@@ -11,8 +11,12 @@
 name: Build K2P
 
 on:
+  push:
+    branches:
+      - main
   label:
-    types: [created]
+    type:
+      - created
   repository_dispatch:
   workflow_dispatch:
     inputs:
