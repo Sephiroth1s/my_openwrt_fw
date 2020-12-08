@@ -13,7 +13,7 @@ name: Build K2P
 on:
   push:
     branches:
-      - main
+      - k2p
   label:
     type:
       - created
